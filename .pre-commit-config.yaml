@@ -44,6 +44,10 @@ repos:
           - --hook-config=--create-file-if-not-exist=true
       - id: tfupdate
         name: Autoupdate Terraform versions
+      - id: tfupdate
+        name: Autoupdate AWS provider versions
+        args:
+          - --args=provider aws
   - repo: https://github.com/Checkmarx/kics
     rev: v1.5.10
     hooks:
